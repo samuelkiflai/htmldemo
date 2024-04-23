@@ -1,0 +1,22 @@
+
+header {
+    
+    display: flex;
+    background-color: rgb(237, 182, 116);
+    justify-content: space-around;
+    gap: 5px;
+    
+
+
+}
+
+
+nav ul{
+    list-style: none;
+    color: rgb(3, 3, 94);
+    font-weight: 300;
+    display: flex;
+    gap: 15px;
+    
+
+}
