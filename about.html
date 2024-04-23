@@ -22,6 +22,36 @@
         font-weight: bold;
     }
 
+    .container{
+        display: grid;
+        border: 1px solid black;
+        background-color: rgb(4, 4, 4);
+        grid-template-rows: 300px;
+        grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+        align-items: center;
+        justify-items: center;
+    
+    }
+    .box-one {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(7, 7, 8);
+        border: 2px solid rgb(0, 1, 0);
+        text-align: center ;
+        color: beige;
+        
+        
+    }
+
+    .box-two img {
+        width: 400px;
+        height: 90%;
+        background-color: rgb(126, 246, 186);
+        border: 2px solid rgb(0, 9, 0);
+        object-fit: contain;
+        
+    }
+        
 
   </style> 
 
@@ -63,6 +93,27 @@
     dolores eos numquam possimus quaerat culpa! Nobis autem, ut, saepe perferendis eum 
     voluptate non adipisci voluptas reiciendis corrupti possimus, laborum tempore eveniet.
   </p>
+
+
+  <div class="container">
+
+    <div class="box-one">
+        <h1><span class="about"> About Page</span></h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Vitae odio dolores harum corrupti qui quae voluptates, 
+            rerum quis aspernatur voluptatem!</p><br>
+
+            <button > Visit </button>
+    
+    </div>
+    
+    <div class="box-two">
+        <img src="asset/media/asmaraatnight.jpeg" alt="">
+    </div>
+
+   
+
+    </div>
 
 
   
