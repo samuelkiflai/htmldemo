@@ -5,53 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>resume</title>
-<style>
+    <title>Resume</title>
 
-    .container {
-        width: 800px;
-        height: 400px;
-        margin-left: 3em;
-        margin-top: 50px;
-        border: 2px solid green;
-        display: flex;
-        gap: 10px;
-        justify-content: space-between;
-  
-        
-    }
+    <style>
 
-    .box-one {
-        width: 150px;
-        height: 100px;
-        background-color: rgb(82, 82, 250);
-        border: 2px solid rgb(0, 9, 0);
-        align-self: flex-end;
-    }
-
-    .box-two {
-        width: 100px;
-        height: 100px;
-        background-color: rgb(126, 246, 186);
-        border: 2px solid rgb(0, 9, 0);
-        align-self: center;
-        
-
-    }
-    .box-three {
-        width: 120px;
-        height: 100px;
-        background-color: rgb(243, 96, 162);
-        border: 2px solid rgb(0, 9, 0);
-       align-self: center;
-        
-    }
-    .box-four {
-        width: 120px;
-        height: 100px;
-        background-color: rgb(210, 251, 104);
-        border: 2px solid rgb(0, 9, 0)
- 
+        body
+        {
+            margin: 0;
+            
         }
 
         header {
@@ -59,11 +20,8 @@
             background-color: rgb(248, 192, 122);
             justify-content: space-between;
             gap: 5px;
-
-
         }
        
-
         nav ul{
             list-style: none;
             color: rgb(3, 3, 94);
@@ -73,11 +31,51 @@
             
   
         }
+    
+        .resume{
+        
+            
+            display: flex;
+            border: 1px solid black;
+            text-align: center;
+            min-height: 100vh;
+            flex-grow: 1;
+            
 
+        }
+        .aside{
+            display: flex;
+            background-color: rgb(139, 197, 248);
+            border: 1px solid black;
+        }
 
+        main{ 
+           background-color: rgb(77, 165, 247);
+           flex-grow: 1;
+           
+        }
+       @media screen and (max-width: 700px) {
+        .resume{
+            flex-direction: column;
+        }
+        
+       }
+       .profilepic{
+
+        width: 100px;
+        height: 100px;
+        align-items: start;
+        border-radius: 50%;
+       }
+
+       .bio{
+        display: flex;
+        height: 50vw;
+        border: 1 solid rgb(245, 5, 5);
+        align-items: center;
+        flex-grow: 1;
+       }
 </style>
-
-
 </head>
 
 
@@ -99,15 +97,31 @@
            </nav>
         
     </header>
+
+    <main class="resume">
+        
+        <div class="aside">
+            <div>
+                <img src="asset/media/profilepic.jpeg" alt="profile pic" class="profilepic">
+                <span>Full Name</span> 
+            </div>
+            <div class="Bio">
+            <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, vitae?
+            </div>
+        </div>
+
+
+
+        <div class="main">main <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum atque nulla asperiores architecto, 
+            nesciunt debitis explicabo voluptate nihil neque voluptates?
+        </div>
+        
+    </main>
+
+
+    <footer>
+        <p>Copyright 2024 &copy;</p>
+    </footer>
    
-
-    <div class="container">
-
-    <div class="box-one">one</div>
-    <div class="box-two">two</div>
-    <div class="box-three">three</div>
-    <div class="box-four">four</div>
-
-    </div>
 </body>
 </html>
