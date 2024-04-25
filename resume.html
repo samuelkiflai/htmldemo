@@ -12,7 +12,11 @@
         body
         {
             margin: 0;
+            padding: 0;
             
+        }
+        *{
+            box-sizing: border-box;
         }
 
         header {
@@ -45,13 +49,21 @@
         }
         .aside{
             display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
             background-color: rgb(139, 197, 248);
-            border: 1px solid black;
+            border-right: 1px dashed black;
+            flex-grow: 1;
         }
 
-        main{ 
-           background-color: rgb(77, 165, 247);
-           flex-grow: 1;
+        .main-page{ 
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: rgb(77, 165, 247);
+           
            
         }
        @media screen and (max-width: 700px) {
@@ -61,20 +73,51 @@
         
        }
        .profilepic{
-
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         align-items: start;
-        border-radius: 50%;
+        border-radius: 5%;
+    
        }
 
        .bio{
-        display: flex;
-        height: 50vw;
-        border: 1 solid rgb(245, 5, 5);
-        align-items: center;
-        flex-grow: 1;
+
+        border-top: 2px dotted  black;
+        text-justify: start;
+        
+       
        }
+       .contacts{
+        
+        border-top: 2px dotted  black;
+        text-align: left;
+        flex-grow: 0;
+       }
+       .education {
+        border-bottom: 2px dotted  black ;
+
+       }
+       .skills{
+        border-top: 2px dotted  black ;
+        text-align: left;
+       }
+       .hobbies{
+        display: flex;
+        flex-direction: column;
+        border-top: 2px dotted  black ;
+        text-align: left;
+       }
+       .titles{
+
+        text-align: center;
+        font-style: italic ;
+        color: rgb(6, 36, 132);
+        stroke: 0.2px;
+       }
+
+      
+
+
 </style>
 </head>
 
@@ -101,19 +144,62 @@
     <main class="resume">
         
         <div class="aside">
-            <div>
+            <div >
                 <img src="asset/media/profilepic.jpeg" alt="profile pic" class="profilepic">
-                <span>Full Name</span> 
+                <br>
+            <span class="name">Full Name</span> 
             </div>
-            <div class="Bio">
-            <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, vitae?
+
+       
+            <div class="bio">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, vitae?
             </div>
-        </div>
+
+            <div class="contacts">
+                <h3>Contacts</h3>
+                <ul>
+
+                <li><p><span>&#128241; &nbsp;&nbsp;<a href="tel:+4471234556">071234455</span></p></a></li>
+               <li> <p><span>&#9993; &nbsp;&nbsp;<a href="mailto:sam@gmail.com">samuel@gmail.com</span></p></a></li>
+                <li><p><span>&#127968; &nbsp;&nbsp;Oxford street 45 <br> &nbsp;London UK</span></p></li>
+
+               </ul>
+
+            </div>
+    </div>
 
 
 
-        <div class="main">main <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum atque nulla asperiores architecto, 
-            nesciunt debitis explicabo voluptate nihil neque voluptates?
+        <div class="main-page">
+
+            <div class="education"><h2 class="titles">Education </h2> <br> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum atque nulla asperiores architecto, 
+                nesciunt debitis explicabo voluptate nihil neque voluptates? 
+            </div>
+            <div class="job"><h2 class="titles">Employment History</h2><br> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum atque nulla asperiores architecto, 
+                nesciunt debitis explicabo voluptate nihil neque voluptates?
+            </div>
+            <div class="skills"><h2 class="titles">skills </h2><br> 
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Angular</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="hobbies"> <h2 class="titles">Hobbies </h2><br>
+                
+                <ul>
+                    <li>Football</li>
+                    <li>Cooking</li>
+                    <li>Swiming</li>
+                    <li>Reading</li>
+                    
+                </ul>
+                 </div>
+             
         </div>
         
     </main>
