@@ -15,52 +15,52 @@
   <title>Asmara City</title>
 
   <style>
+    
 
 .container {
-    width: 800px;
-    height: 400px;
-    margin-left: 3em;
-    margin-top: 50px;
-    border: 2px solid green;
+    margin-top: 1rem;
+    height: 100vh;
     display: flex;
-    gap: 10px;
-    justify-content: space-between;
-
+    flex-direction: column;
+    justify-content: space-between;   
+}
+.left{
     
+    background-color: #2a2138;
+    color:whitesmoke ;
+    width: 20%;
 }
 
-.box-one {
-    width: 150px;
-    height: 100px;
-    background-color: rgb(82, 82, 250);
-    border: 2px solid rgb(0, 9, 0);
-    align-self: flex-end;
-}
 
-.box-two {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(126, 246, 186);
-    border: 2px solid rgb(0, 9, 0);
-    align-self: center;
-    
-
-}
-.box-three {
-    width: 120px;
-    height: 100px;
-    background-color: rgb(243, 96, 162);
-    border: 2px solid rgb(0, 9, 0);
-   align-self: center;
-    
-}
-.box-four {
-    width: 120px;
-    height: 100px;
-    background-color: rgb(210, 251, 104);
-    border: 2px solid rgb(0, 9, 0)
-
+       @media screen and (max-width: 700px) {
+        .left{
+            flex-direction: column;
+       
+        }
     }
+ul{
+    list-style-type: none;
+    line-height: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    flex-grow: 1;
+    
+
+
+}
+.right{
+    display: flex;
+    width: 80%;
+}
+
+.dash:hover{
+    background-color:#221a2e ;
+}
+
+.users:hover{
+    background-color:#221a2e ;
+}
+
 
   </style>
 
@@ -84,47 +84,29 @@
          
            </nav>
         </header>
-  <br><br><br>
+<div class="container">
+        <ul class="left">
+             <li class="dash"><i class="fa-solid fa-gauge-simple-high"></i>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</li>
+             <li class="users"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;Users</li>
+             <li><i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;&nbsp;&nbsp;Site</li>
+             <li><i class="fa-solid fa-sterling-sign"></i>&nbsp;&nbsp;&nbsp;&nbsp;Sales</li>
+             <li><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Email</li>
+             <li><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;&nbsp;&nbsp;Settings</li>
+        </ul>
+        <div class="right">
 
-<table border="1px"> 
-    <th><h3>Contact us</h3></th>
-    <tr><td>
-        <p><span>&#128241; &nbsp;&nbsp;<a href="tel:+4471234556">071234455</span></p></a>
-    </td>
-    </tr>
-    <tr>
-    <td>   
-        <p><span>&#9993; &nbsp;&nbsp;<a href="mailto:sam@gmail.com">samuel@gmail.com</span></p></a>
-    </td>
-    </tr>
-    <td> 
-        <p><span>&#127968; &nbsp;&nbsp;Oxford street 45 <br> &nbsp;London UK</span></p>
-    </td>
+        </div>
+    </div>
+        
+  
 
-
-
-</table>
+ 
   
 
   
 
-  <h3>Booking</h3>
-  <form action="">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" placeholder="enter yor name"><br><br>
-    <label for="email">E-mail</label>
-    <input type="text" name="email" id="email" placeholder="enter yor E-mail"><br><br>
-    <button>Submit</button>
-  </form>
+ 
 
-  <div class="container">
-
-    <div class="box-one">one</div>
-    <div class="box-two">two</div>
-    <div class="box-three">three</div>
-    <div class="box-four">four</div>
-
-    </div>  
   
   
     <footer>
