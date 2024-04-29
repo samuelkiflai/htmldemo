@@ -17,6 +17,11 @@ header {
   
 }
 
+header img {
+    width: 70px;
+    height: 70px;
+}
+
 .list{
     font-family: "Oswald", sans-serif,Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
