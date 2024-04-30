@@ -16,48 +16,98 @@
 
   <style>
     
+   @media screen and (max-width:700px) {
+.left{
+    display: flex;
+    grid-template-columns: 100%;
+}
+    
+   }
+    
 
 .container {
     margin-top: 1rem;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+   grid-template-rows: 200px;
+   grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
     justify-content: space-between;   
 }
 .left{
-    
     background-color: #2a2138;
     color:whitesmoke ;
-    width: 20%;
-}
-
-
-       @media screen and (max-width: 700px) {
-        .left{
-            flex-direction: column;
-       
-        }
-    }
-ul{
-    list-style-type: none;
-    line-height: 4;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    flex-grow: 1;
-    
-
-
+    align-items:center;
+    height: 100vh;
+    width: 20vw;
 }
+
+
 .right{
     display: flex;
-    width: 80%;
+    width: 800px;
 }
 
+.dash {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
 .dash:hover{
+    
+    background-color:#221a2e ;
+
+}
+
+.users{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.users:hover{
+    background-color:#221a2e ;
+}
+.site{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.site:hover{
     background-color:#221a2e ;
 }
 
-.users:hover{
+.sales{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.sales:hover{
+    background-color:#221a2e ;
+}
+
+.email{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.email:hover{
+    background-color:#221a2e ;
+}
+
+.set{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.set:hover{
     background-color:#221a2e ;
 }
 
@@ -72,27 +122,27 @@ ul{
 
         <img src="asset/media/Asmarina.jpeg" alt="logo">
         <nav>
-            <ul class="list">
+            <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="https://www.google.com" target="_blank"> Google </a></li>
+                <li><a href="gallery.html">Gallery </a></li>
             
             </ul>
             
-         
-           </nav>
-        </header>
-<div class="container">
-        <ul class="left">
-             <li class="dash"><i class="fa-solid fa-gauge-simple-high"></i>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</li>
-             <li class="users"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;Users</li>
-             <li><i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;&nbsp;&nbsp;Site</li>
-             <li><i class="fa-solid fa-sterling-sign"></i>&nbsp;&nbsp;&nbsp;&nbsp;Sales</li>
-             <li><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Email</li>
-             <li><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;&nbsp;&nbsp;Settings</li>
-        </ul>
+        </nav>
+    </header>
+    
+     <div class="container">
+        <div class="left">
+             <div class="dash"><i class="fa-solid fa-gauge-simple-high"></i>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</div>
+             <div class="users"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;Users</div>
+             <div class="site"> <i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;&nbsp;&nbsp;Site</div>
+             <div class="sales"> <i class="fa-solid fa-sterling-sign"></i>&nbsp;&nbsp;&nbsp;&nbsp;Sales</div>
+             <div class="email"> <i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Email</div>
+             <div class="set"> <i class="fa-solid fa-gear"></i>&nbsp;&nbsp;&nbsp;&nbsp;Settings</div>
+        </div>
         <div class="right">
 
         </div>
