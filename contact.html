@@ -16,9 +16,10 @@
 
   <style>
     
-   @media screen and (max-width:700px) {
-.left{
+   @media screen and (min-width:768px) {
+.container{
     display: flex;
+    flex-direction: row;
     grid-template-columns: 100%;
 }
     
@@ -29,8 +30,8 @@
     margin-top: 1rem;
     height: 100vh;
     display: grid;
-   grid-template-rows: 200px;
-   grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
     justify-content: space-between;   
 }
 .left{
@@ -47,70 +48,22 @@
 
 .right{
     display: flex;
-    width: 800px;
+    width: 80vw;
+    height: 100vh;
+    flex-grow: 1;
 }
 
-.dash {
+.item {
     width: 200px;
     height: 50px;
     display: flex;
     align-items: center;
 }
-.dash:hover{
+.item:hover{
     
     background-color:#221a2e ;
 
 }
-
-.users{
-    width: 200px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-.users:hover{
-    background-color:#221a2e ;
-}
-.site{
-    width: 200px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-.site:hover{
-    background-color:#221a2e ;
-}
-
-.sales{
-    width: 200px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-.sales:hover{
-    background-color:#221a2e ;
-}
-
-.email{
-    width: 200px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-.email:hover{
-    background-color:#221a2e ;
-}
-
-.set{
-    width: 200px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-.set:hover{
-    background-color:#221a2e ;
-}
-
 
   </style>
 
@@ -133,17 +86,20 @@
             
         </nav>
     </header>
-    
+
      <div class="container">
         <div class="left">
-             <div class="dash"><i class="fa-solid fa-gauge-simple-high"></i>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</div>
-             <div class="users"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;Users</div>
-             <div class="site"> <i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;&nbsp;&nbsp;Site</div>
-             <div class="sales"> <i class="fa-solid fa-sterling-sign"></i>&nbsp;&nbsp;&nbsp;&nbsp;Sales</div>
-             <div class="email"> <i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Email</div>
-             <div class="set"> <i class="fa-solid fa-gear"></i>&nbsp;&nbsp;&nbsp;&nbsp;Settings</div>
+             <div class="item dash"><i class="fa-solid fa-gauge-simple-high"></i>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</div>
+             <div class="item users"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;Users</div>
+             <div class="item site"> <i class="fa-solid fa-sitemap"></i>&nbsp;&nbsp;&nbsp;&nbsp;Site</div>
+             <div class="item sales"> <i class="fa-solid fa-sterling-sign"></i>&nbsp;&nbsp;&nbsp;&nbsp;Sales</div>
+             <div class="item email"> <i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Email</div>
+             <div class="item set"> <i class="fa-solid fa-gear"></i>&nbsp;&nbsp;&nbsp;&nbsp;Settings</div>
         </div>
+
         <div class="right">
+
+
 
         </div>
     </div>

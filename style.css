@@ -6,17 +6,19 @@ header {
 
     
     display: flex;
-    background-color:#786f87 ;
-    
+    background-color:rgba(95, 60, 152, 0.3) ;
     justify-content: space-between;
     clip-path: polygon(0% 0%, 100% 0%, 100% 71%, 0.2% 100%);
     gap: 5px;
+    width: 100vw;
+    
  
 }
 
 header img {
     width: 70px;
     height: 70px;
+    border-radius: 50%;
 }
 
 
