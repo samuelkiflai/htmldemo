@@ -25,67 +25,69 @@
       height: 20vw;
       width: 100vh;
     }
+
+
+
     main{
       margin-top: 250px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
     }
-
-    .fig {
-      margin-left: 200px;
-      margin-top: 20px;
-      border-radius: 50%;
-      border-color: blue;
-      border-top: 10px;
-      border: 50px;
-      opacity: 90%;
-      border: 5px  dotted  rgba(16, 1, 1, 0.3) ;
-      box-shadow: 0 0 20px blue;
-      
-     }
-
 
     #title{
       font-size: 50px;
-      font-style: oblique;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Arial, Helvetica, sans-serif;
       text-align: center;
       
     }
 
-  .box{
-  margin-left: 250px;
-  width: 200px;
-  height: 200px;
-  color: rgb(36, 14, 1);
-  background-color: rgb(122, 146, 245);
-  box-shadow: 0 0 30px  rgb(50, 238, 132);
-  border: 5px  dashed  rgba(252, 56, 56, 0.3) ;
-  overflow: hidden;
-  align-items: center;
-  
-  }
 
-  #box:hover{
-    
-    font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-    text-shadow: 3px 3px 5px ;
-    color: brown;
-    border: 5px;
-  }
+  .pics{
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      align-content: center;
+      justify-content: center;
+     }
+     .pics-2{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+     }
 
-  p{
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-    text-indent: 3rem;
-    column-count: 2;
-    column-gap: 30px;
-    
+    .fig {
+      
+      margin-left: 20px;
+      margin-top: 20px;
+      border-radius: 5%;
+      border-color: blue;
+      border-top: 10px;
+      border: 50px;
+      opacity: 90%;
+      border: 1px  dotted  rgba(16, 1, 1, 0.3) ;
+      box-shadow: 0 0 20px rgb(115, 115, 246);
+      
+     }
+     .caption{
+    text-align: center;
+     }
 
-  }
+     @media screen and (max-width:600px) { 
 
+.pics {
+  flex-direction: column;
+}
+
+     }
  
+     @media screen and (min-width:800px) { 
+
+.pics {
+  flex-direction: column;
+  
+}
+     }
    
     
   </style>
@@ -129,14 +131,20 @@
        quam maxime nam illo, quisquam perspiciatis at delectus vitae rem ad nostrum minima 
        perferendis, saepe hic? Rem recusandae quae necessitatibus numquam.</p>
 
-    <figure >
-      <img src="asset/media/Asmarina.jpeg" alt="picture of asmara" style="width: 300px;" class="fig">
-      <figcaption><u>fig1. Asmara/Eritrea  </u></figcaption>
-    </figure>
-
-    <div class="box">
-      <h1 id="box">Asmara</h1>
+    <div class="pics" >
+      <div class="pic-1">
+      <img src="asset/media/Asmarina.jpeg" alt="picture of asmara" style="width: 300px;"  height="425px" class="fig"> 
+      </div>
+      <div class="pic-2">
+      <img src="asset/media/asmara05.jpeg" alt="picture of asmara" style="width: 300px;"  class="fig" ><br>
+      <img src="asset/media/asmara04.jpeg" alt="picture of asmara" style="width: 300px;"  class="fig">
     </div>
+    
+  </div>
+      
+  <div class="caption">
+    <figcaption><u>fig1. Asmara/Eritrea  </u></figcaption>
+  </div>
 
 </main>
  
