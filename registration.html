@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+
+    <title>registration form</title>
+
+    <style>
+
+        body{
+            line-height: 1.5;
+
+        }
+
+    .form-group{ 
+            margin-bottom: 1rem;
+            text-align: left;
+             
+        }
+        label{
+            display: block;
+            font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+        }
+        input{
+
+        padding: 0.5rem 0.5rem;
+        border: 1px solid blueviolet;
+        outline: 0;
+    
+        }
+
+        input[type="email"]:focus{ 
+        
+        padding: 0.5rem 0.5rem;
+        border: 2px solid rgb(242, 129, 17);
+        outline: 0;
+            
+        }
+        
+        select{
+            width: 100px;
+        }
+
+        button{ 
+            padding: 0.1rem 0.5rem;
+            background-color: rgb(80, 119, 246);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            align-items: center;
+        }
+        
+        
+       .main{
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+        height: 40rem;
+        margin-left: 5rem;
+        margin-top: 5rem;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+    
+    <form action="" >
+        <div  class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" placeholder="First Name" maxlength="10" >
+
+        </div>
+        <div class="form-group"> 
+            <label for="familyname">Family Name</label>
+           <input type="text"  placeholder="Family Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder="name@example.com">
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="comment">Comment ...</label>
+            <textarea name="" id="" cols="30" rows="10" >
+            </textarea>
+        </div>
+        <div class="form-group">
+            <label for="ageRangeField">Age</label>
+            <select id="ageRangeField">
+              <option value="0-13">0-13</option>
+              <option value="14-17">14-17</option>
+              <option value="18-23">18-23</option>
+              <option value="24+">24+</option>
+            </select>
+        </div>
+        <div>
+            <button  type="submit" >Register</button>
+            <button type="reset" >Clear</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
