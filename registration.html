@@ -87,6 +87,11 @@
         margin-left: 5rem;
         margin-top: 5rem;
        }
+
+       .buttons:hover{ 
+        transform:scale()
+       }
+       
     </style>
 </head>
 
@@ -98,7 +103,7 @@
             <legend>Personal Details</legend>
         <div  class="form-group">
             <label for="firstname">First Name</label>
-            <input type="text" placeholder="First Name" maxlength="10" >
+            <input type="text" placeholder="First Name" maxlength="10" required   >
 
         </div>
 
@@ -163,7 +168,7 @@
         <div class="checkbox">
             <div>
             <input type="checkbox" name="" id="privacy" checked>
-            <label  class="label-inline" for="privacy">Agree privacy protocol</label>
+            <label  class="label-inline" for="privacy">Agree to privacy policy</label>
             </div>
             <div>
             <input type="checkbox" name="" id="notification">
@@ -175,7 +180,8 @@
 
     </fieldset>
        
-        <div>
+        <div class="buttons">
+
             <button  type="submit" >Register</button>
             <button type="reset" >Clear</button>
         </div>
