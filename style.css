@@ -84,7 +84,7 @@ ul li:hover ul.dropdown{
 }
 
 
-/* .menu{ */
+/* .menu{ 
     font-family: "Oswald", sans-serif,Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -97,8 +97,8 @@ ul li:hover ul.dropdown{
   
     
    
-  /* } */
-/* nav ul{ */
+  } */
+/* nav ul{ 
     list-style: none;
     font-weight: 300;
     display: flex;
@@ -106,7 +106,7 @@ ul li:hover ul.dropdown{
     color: whitesmoke;
     
 
-/* } */
+ } */
 
 footer{
     width: 100vw;
