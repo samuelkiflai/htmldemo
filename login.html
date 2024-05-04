@@ -29,8 +29,9 @@
             width: 50vw;
             padding: 2rem;
             line-height: 1.5;
-            column-gap: 10px;
+            
         }
+
         .main{
 
             display:flex;
@@ -48,10 +49,10 @@
 
         input{
             padding:0.5rem 0.5rem ;
-        
-        
+            
         }
-        input[type="email"]:focus{ 
+    
+        .form-label[type="email"]:focus{ 
         
         padding: 0.5rem 0.5rem;
         border: 3px solid #86b7fe;
@@ -61,26 +62,33 @@
         }
 
         .checkbox{
-
-            
+            display: flex ;
             margin-top: 20px;
+            text-align: center;
+            
         }
 
         .buttons {
+            padding: 10px 20px;
             margin-top: 10px;
             background-color: #0d6efd;
-            border-radius: 20%;
+            border-radius: 5%;
             width: 200px;
             align-content: center;
-           
-            
-           
-
+            align-items: center;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+        
         }
 
+        .btn btn-primary {
+            font-size: 14px;
+            font-weight: 500;  
+        }
         .copy{
             color: #808283;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
 
@@ -98,14 +106,15 @@
    
     <div  class="form-group">
       
-        <input class="form-label" type="email" placeholder="Email adress" maxlength="10" required   >
+        <input class="form-label" type="email" placeholder="Email adress" maxlength="20" required  >
 
     </div>
     <div  class="form-group">
        
-        <input type="password" placeholder="Password" maxlength="10" required   >
+        <input type="password" placeholder="Password" minlength="8" required   >
 
     </div>
+
     <div class="checkbox">
         <input type="checkbox" name="remeber-me" id="">
         <label for="remeber-me" class="label-inline">Remember me</label>
