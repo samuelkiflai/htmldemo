@@ -2,22 +2,22 @@ html{
     margin: 1px;
 }
 
-*{
+*{ 
     margin: 0px;
     padding: 0px;
     font-family: monospace ;
-}
+} 
 
 header { 
-
 
     display: flex;
     justify-content: space-between;
     background-color: rgba(130, 130, 221, 0.3);
     gap: 5px;
     width: 100vw;
+    height: 70px;
     
- 
+
 } 
 
 header img {
