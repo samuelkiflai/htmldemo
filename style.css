@@ -2,6 +2,12 @@ html{
     margin: 1px;
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace ;
+}
+
 header { 
 
 
@@ -21,20 +27,17 @@ header img {
     border-radius: 50%;
 }
 
-/* body{  
+main {
+    margin-top: 50px;
+  }
+/* body{   
     background-image: url(asset/media/asmara02.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: vw;
+    height: 10vw;
     width: 100vh;
-    } */
+     }  */
 
-
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: monospace ;
-}
  ul {
     list-style: none;
     text-align: center;
