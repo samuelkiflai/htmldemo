@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3904b43c08.js" crossorigin="anonymous"></script>
+    <title>menu</title>
+
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace ;
+}
+ ul {
+    margin-right: 5px;
+    list-style: none;
+    background-color: rgba(130, 130, 221, 0.3);
+    text-align: right;
+    
+ }
+
+ ul li {
+    display: inline-block;
+    position: relative;
+
+ }
+
+ ul li a{
+
+    display: block;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    
+   
+
+    
+
+ }
+ ul li ul.dropdown li{
+    display:block;
+ }
+
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999 ;
+    display: none;
+
+}
+ul li a:hover{
+    background-color: rgb(200, 158, 239);
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">About Us &#9662;</a>
+            <ul class="dropdown">
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resume.html">Resume </a></li>
+            </ul>
+        </li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href=""> <i class="fa-regular fa-user"> </i> &#9662;</a>
+           <ul class="dropdown">
+            <li><a href="login.html">login </a></li>
+            <li><a href="contact.html">SignUp </a></li>
+           </ul></li>
+    </ul>
+</body>
+</html>

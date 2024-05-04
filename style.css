@@ -2,27 +2,86 @@ html{
     margin: 1px;
 }
 
-header {
+header { 
 
-    
+
     display: flex;
-    background-color:rgba(95, 60, 152, 0.1) ;
     justify-content: space-between;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 71%, 0.2% 100%);
+    background-color: rgba(130, 130, 221, 0.3);
     gap: 5px;
     width: 100vw;
     
  
-}
+} 
 
 header img {
+    display: flex;
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
 
+/* body{  
+    background-image: url(asset/media/asmara02.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: vw;
+    width: 100vh;
+    } */
 
-.menu{
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace ;
+}
+ ul {
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+    
+ }
+
+ ul li {
+    display: inline-block;
+    position: relative;
+
+ }
+
+ ul li a{
+
+    display: block;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    
+   
+
+    
+
+ }
+ ul li ul.dropdown li{
+    display:block;
+ }
+
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999 ;
+    display: none;
+
+}
+ul li a:hover{
+    background-color: rgb(200, 158, 239);
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+
+}
+
+
+/* .menu{ */
     font-family: "Oswald", sans-serif,Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -35,8 +94,8 @@ header img {
   
     
    
-  }
-nav ul{
+  /* } */
+/* nav ul{ */
     list-style: none;
     font-weight: 300;
     display: flex;
@@ -44,7 +103,7 @@ nav ul{
     color: whitesmoke;
     
 
-}
+/* } */
 
 footer{
     width: 100vw;
