@@ -6,7 +6,7 @@ header {
 
     
     display: flex;
-    background-color:rgba(95, 60, 152, 0.3) ;
+    background-color:rgba(95, 60, 152, 0.1) ;
     justify-content: space-between;
     clip-path: polygon(0% 0%, 100% 0%, 100% 71%, 0.2% 100%);
     gap: 5px;
@@ -48,7 +48,7 @@ nav ul{
 
 footer{
     width: 100vw;
-    background-color: rgb(195, 174, 244);
+    background-color: rgb(215, 212, 222);
     display: flex;
     flex-direction: column;
     justify-content: end;

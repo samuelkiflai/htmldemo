@@ -26,9 +26,21 @@
       width: 100vh;
     }
 
+    .m-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+    .p-content{
+      background-color: rgb(179, 184, 184);
+    }
+
 
 
     main {
+      display: flex;
+      flex-wrap: wrap;
       margin-top: 250px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
   
@@ -84,8 +96,8 @@
  
      @media screen and (min-width:1000px) { 
 
-.pics {
-  flex-direction: column;
+.pics-2 {
+  flex-direction: row;
   
 }
      }
@@ -105,8 +117,10 @@
               <li class="menu"><a href="about.html">About</a></li>
               <li class="menu"><a href="contact.html">Contact</a></li>
               <li class="menu"><a href="resume.html">Resume</a></li>
-              <li class="menu"><a href="gallery.html"> Gallery </a></li>
-          
+              <li class="menu"><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+              
+            
+
           </ul>
           
        
@@ -114,27 +128,23 @@
 </header>
 
 <main> 
-<div class="paragraph">
-  <div>
-  <h1 id="title"> welcome to our WebPage</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laborum ipsum,
-    eius soluta sequi non temporibus accusantium dolores, quas, numquam dolorum rerum 
-    zreprehenderit porro deleniti officia architecto assumenda dolorem vitaeLorem ipsum 
-    dolor sit amet consectetur adipisicing elit. Distinctio laborum ipsum,
-    eius soluta sequi non temporibus accusantium dolores, quas, numquam dolorum rerum 
-    zreprehenderit porro deleniti officia architecto assumenda dolorem vitaeLorem ipsum dolor
-     sit amet consectetur adipisicing elit. Distinctio laborum ipsum,
-    eius soluta sequi non temporibus accusantium dolores, quas, numquam dolorum rerum 
-    zreprehenderit porro deleniti officia architecto assumenda dolorem vitaeLorem ipsum dolor
-     sit amet consectetur adipisicing elit. Distinctio laborum ipsum,
-    eius soluta sequi non temporibus accusantium dolores, quas, numquam dolorum rerum 
-    zreprehenderit porro deleniti officia architecto assumenda dolorem vitae.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolore 
-      mollitia eius voluptatum, nesciunt beatae sint eligendi deserunt sapiente
-       quam maxime nam illo, quisquam perspiciatis at delectus vitae rem ad nostrum minima 
-       perferendis, saepe hic? Rem recusandae quae necessitatibus numquam.</p>
-    </div>
-  </div>
+<div class="m-container">
+  <div class="p-content">
+    <h1 id="title"> welcome to our WebPage</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laborum ipsum,
+      eius soluta sequi non temporibus accusantium dolores, quas, numquam dolorum rerum 
+      zreprehenderit porro deleniti officia architecto assumenda dolorem vitaeLorem ipsum 
+      dolor sit amet consectetur adipisicing elit. Distinctio laborum ipsum,
+      eius soluta sequi non temporibus accusantium dolores, quas, numquam dolorum rerum 
+      zreprehenderit porro deleniti officia architecto assumenda dolorem vitaeLorem ipsum dolor
+       sit amet consectetur adipisicing elit. Distinctio laborum ipsum,
+      eius soluta sequi non temporibus accusantium dolores, quas, numquam dolorum rerum 
+      zreprehenderit porro deleniti officia architecto assumenda dolorem vitaeLorem ipsum dolor
+       sit amet consectetur adipisicing elit. Distinctio laborum ipsum,
+      eius soluta sequi non temporibus accusantium dolores, quas, numquam dolorum rerum 
+      zreprehenderit porro deleniti officia architecto assumenda dolorem vitae.</p>
+
+      </div>
 
     <div class="pics" >
       <div class="pic-1">
@@ -151,6 +161,8 @@
   <div class="caption">
     <figcaption><u>fig1. Asmara/Eritrea  </u></figcaption>
   </div>
+
+</div>
 
 </main>
  
