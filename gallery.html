@@ -11,37 +11,42 @@
 
     <title>Asmara city Gallery </title>
     <style>
-.gallery{
-    display: grid;
-    margin: 6px;
-    border: 1px solid black;
-    grid-template-rows: repeat(3,17rem);
-    grid-template-columns: repeat(auto-fit,minmax(20em,1fr));
-    object-fit: fill;
-    justify-content: center;
+ *{
+    margin: 0px;
+    border: opx;
+    box-sizing: border-box;
+ }
+        .gallery-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100vw;
+            background-color: rgb(246, 249, 248);
+           
+
+        }
+           .gallery{
+           display: flex;
+           flex-wrap: wrap;
+           background-color: rgb(215, 215, 214);
+            width: 100vw;
+            margin: 10px; 
+            justify-content: center;         
 
 }
 
-.pic01 {
-    align-content: center;
+.gallery img {
+   width: 400px;
+   height: auto;
+   
     margin: 1rem;
+    border-radius: 8%;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0,0.5)
+
     
 }
-.pic02 {
-    align-content: center;
-    margin: 1rem;
-    
-}
-.pic03 {
-    align-content: center;
-    margin: 1rem;
-    
-}
-.pic04 {
-    align-content: center;
-    margin: 1rem;
-    
-}
+
     </style>
 </head>
 <body>
@@ -61,14 +66,24 @@
            </nav>
         </header>
 
+
+<div class="gallery-container">
+
         <div class="gallery">
 
-            <div class="pic01"><img src="asset/media/asmara04.jpeg" alt=""></div>
-            <div class="pic02"><img src="asset/media/asmara05.jpeg" alt=""></div>
-            <div class="pic03"><img src="asset/media/asmara03.jpeg" alt=""></div>
-            <div class="pic05"><img src="asset/media/asmara04.jpeg" alt=""></div>
-
+               <div> <img src="asset/media/asmara04.jpeg" alt="" >
+               </div>
+                <div><img src="asset/media/asmara05.jpeg" alt="">
+                </div>
+                <div><img src="asset/media/asmara03.jpeg" alt="">
+                </div>
+                <div><img src="asset/media/asmara04.jpeg" alt="">
+                </div>
         </div>
+    </div>
     
+    <footer>
+        <p>copyright 2024 &copy;</p>
+      </footer>
 </body>
 </html>
